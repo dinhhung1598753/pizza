@@ -8,7 +8,7 @@
       <div class="intro">
         <div class="left">
           <span>Welcome to </span>
-          <span>Pizza 4P's</span>
+          <span class="name">Pizza 4P's</span>
         </div>
         <div class="right">
           <p>
@@ -20,7 +20,49 @@
             to evolve and improve every day so that we can always fulfill our
             mission of "Delivering Wow, Sharing Happiness" to every guest.
           </p>
-          <p>About Pizza 4P's</p>
+          <p class="btn-about">About Pizza 4P's</p>
+        </div>
+      </div>
+      <div>
+        <ul class="list-picture">
+          <li class="item">
+            <img src="https://pizza4ps.com/img2017/top/img_item2.jpg" alt="" />
+            <span>House-made Cheese</span>
+          </li>
+          <li class="item">
+            <img src="https://pizza4ps.com/img2017/top/img_item1.jpg" alt="" />
+            <span>Farm to Table</span>
+          </li>
+          <li class="item">
+            <img src="https://pizza4ps.com/img2017/top/img_item3.jpg" alt="" />
+            <span>Design</span>
+          </li>
+          <li class="item">
+            <img src="https://pizza4ps.com/img2017/top/img_item4.jpg" alt="" />
+            <span>"Omotenashi</span>
+          </li>
+        </ul>
+      </div>
+      <div class="intro2">
+        <div class="left">
+          <span
+            ><span class="intro-title title-green">“Magic of Pizza”&nbsp;</span>
+            <span class="intro-title"
+              >is<br />
+              the origin of our restaurant.</span
+            ><br /><br
+          /></span>
+          <span class="description"
+            >Back in 2005, the founder of Pizza 4P's, Masuko, built a wood-fired
+            pizza oven with his friends in the backyard of his house. He invited
+            his friends and family and hosted pizza parties. In 2011, the
+            original members who once made the pizza oven gathered again and
+            started the history of Pizza 4P's. We named our restaurant Pizza
+            4P's, based on our vision, Make the World Smile "For Peace."</span
+          >
+        </div>
+        <div class="right">
+          <img src="http://pizza4ps.com/img2017/top/img_top1.jpg" alt="" />
         </div>
       </div>
     </section>
@@ -65,11 +107,78 @@ export default {
       text-align: center;
       font-size: 40px;
       font-family: 'CenturyStd-LightCondensed-VH', l serif;
+      line-height: 6;
+      & .name {
+        color: #9eaf3b;
+      }
     }
     > .right {
       width: 50%;
       padding: 0 20px;
       line-height: 2.1;
+      & .btn-about {
+        border: 2px solid #ccc;
+        padding: 2px 5px;
+        font-size: 24px;
+        display: inline-block;
+      }
+    }
+  }
+
+  .list-picture {
+    display: block;
+    list-style: none;
+    > li {
+      float: left;
+      width: 25%;
+      padding: 0 5px;
+      position: relative;
+      > img {
+        width: 100%;
+        height: auto;
+      }
+      > span {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 26px;
+        font-family: 'CenturyStd-LightCondensed-VH', l serif;
+      }
+    }
+  }
+
+  .intro2 {
+    display: flex;
+    padding: 90px;
+    line-height: 0.9;
+    > .left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+      padding: auto;
+      padding-right: 10px;
+
+      .intro-title {
+        font-family: CenturyStd-LightCondensed-VH, serif;
+        font-size: 40px;
+        &.title-green {
+          color: #9eaf3b;
+        }
+      }
+      > .description {
+        line-height: 1.5;
+      }
+    }
+    > .right {
+      width: 50%;
+      padding: 25px;
+      > img {
+        width: 100%;
+        height: auto;
+      }
     }
   }
 }
