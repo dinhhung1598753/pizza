@@ -68,9 +68,9 @@
       </div>
       <div class="menu">
         <div>
-          <h3>
+          <div>
             <span>Our Menu</span>
-          </h3>
+          </div>
           <ul class="menu-list">
             <li class="menu-item">seasonal</li>
             <li class="menu-item">pizza</li>
@@ -204,7 +204,8 @@ export default {
       0 0;
     background-size: cover;
     padding: 55px 0 45px;
-    > div > h3 {
+    height: 300px;
+    > div > div {
       text-align: center;
     }
     > div > .menu-list {
