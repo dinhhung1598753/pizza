@@ -205,8 +205,10 @@ export default {
     background-size: cover;
     padding: 55px 0 45px;
     height: 300px;
+    font-family: 'CenturyStd-LightCondensed-VH', l serif;
     > div > div {
       text-align: center;
+      font-size: 35px;
     }
     > div > .menu-list {
       display: block;
@@ -219,6 +221,13 @@ export default {
         float: left;
         display: list-item;
         text-align: center;
+        height: 100px;
+        border-left: 1px solid #ccc;
+        line-height: 100px;
+        font-size: 25px;
+        &:first-child {
+          border: none;
+        }
       }
     }
   }
