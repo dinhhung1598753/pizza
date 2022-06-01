@@ -55,14 +55,28 @@
           <span class="description"
             >Back in 2005, the founder of Pizza 4P's, Masuko, built a wood-fired
             pizza oven with his friends in the backyard of his house. He invited
-            his friends and family and hosted pizza parties. In 2011, the
-            original members who once made the pizza oven gathered again and
-            started the history of Pizza 4P's. We named our restaurant Pizza
-            4P's, based on our vision, Make the World Smile "For Peace."</span
+            his friends and family and hosted pizza parties.<br />
+            In 2011, the original members who once made the pizza oven gathered
+            again and started the history of Pizza 4P's. We named our restaurant
+            Pizza 4P's, based on our vision, Make the World Smile "For
+            Peace."</span
           >
         </div>
         <div class="right">
           <img src="http://pizza4ps.com/img2017/top/img_top1.jpg" alt="" />
+        </div>
+      </div>
+      <div class="menu">
+        <div>
+          <div>
+            <span>Our Menu</span>
+          </div>
+          <ul class="menu-list">
+            <li class="menu-item">seasonal</li>
+            <li class="menu-item">pizza</li>
+            <li class="menu-item">food</li>
+            <li class="menu-item">dessert</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -116,6 +130,7 @@ export default {
       width: 50%;
       padding: 0 20px;
       line-height: 2.1;
+      font-family: 'Atlas-Grotesk-Regular-VH', sans-serif;
       & .btn-about {
         border: 2px solid #ccc;
         padding: 2px 5px;
@@ -169,7 +184,9 @@ export default {
         }
       }
       > .description {
-        line-height: 1.5;
+        line-height: 2.1;
+        letter-spacing: 1px;
+        font-family: 'Atlas-Grotesk-Regular-VH', sans-serif;
       }
     }
     > .right {
@@ -178,6 +195,30 @@ export default {
       > img {
         width: 100%;
         height: auto;
+      }
+    }
+  }
+
+  .menu {
+    background: url('https://pizza4ps.com//img2017/top/bg_menu.webp') no-repeat
+      0 0;
+    background-size: cover;
+    padding: 55px 0 45px;
+    height: 300px;
+    > div > div {
+      text-align: center;
+    }
+    > div > .menu-list {
+      display: block;
+      list-style: none;
+      justify-content: center;
+      margin-top: 35px;
+      > .menu-item {
+        text-transform: uppercase;
+        width: 25% !important;
+        float: left;
+        display: list-item;
+        text-align: center;
       }
     }
   }
