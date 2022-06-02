@@ -15,7 +15,7 @@
         </div>
         <div class="news_of_block">
           <section class="newsBlock">
-            <div class="primary">
+            <div class="_primary">
               <div class="item_news">
                 <div class="top_block">
                   <h3 class="title_new">
@@ -29,8 +29,61 @@
                   </div>
                 </div>
                 <div class="bot_block">
-                  <div class="left"></div>
-                  <div class="right"></div>
+                  <div class="left">
+                    <img
+                      src="https://pizza4ps.com/admin/wp-content/themes/wp-templ/timthumb/timthumb.php?src=/admin/wp-content/uploads/2022/05/284262873_5288619267841746_1645715007167620178_n-762x1024.jpg&h=200&w=280&zc=1"
+                      alt=""
+                    />
+                  </div>
+                  <div class="right">
+                    <span class="content_item_news">
+                      Introducing one of our new seasonal dishes, Local
+                      Short-neck Clam with Baby Corn and Kale Linguine. This is
+                      also our very first Linguine dish, for this pasta, we’ve
+                      combined it with local short-neck clam from Phan Thiet and
+                      other nutritious ingredients such as cherry tomatoes, baby
+                      corn and Dalat kale. Besides, we also have three other
+                      special seasonal dishes, which we will share more about
+                      soon! You can now try our new seasonal menu at Pizza 4P’s
+                      Hai Ba Trung (HCMC). </span
+                    ><br />
+                    <span class="btn_see_more">...More</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item_news">
+                <div class="top_block">
+                  <h3 class="title_new">
+                    WE’RE BACK WITH A NEW SEASONAL MENU ✨ 4P’S VERY FIRST
+                    LINGUINE DISH
+                  </h3>
+                  <div class="extra_info">
+                    <span>Date : 2022/05/25</span>
+                    <span class="separation">|</span>
+                    <span>Category : News</span>
+                  </div>
+                </div>
+                <div class="bot_block">
+                  <div class="left">
+                    <img
+                      src="https://pizza4ps.com/admin/wp-content/themes/wp-templ/timthumb/timthumb.php?src=/admin/wp-content/uploads/2022/05/284262873_5288619267841746_1645715007167620178_n-762x1024.jpg&h=200&w=280&zc=1"
+                      alt=""
+                    />
+                  </div>
+                  <div class="right">
+                    <span class="content_item_news">
+                      Introducing one of our new seasonal dishes, Local
+                      Short-neck Clam with Baby Corn and Kale Linguine. This is
+                      also our very first Linguine dish, for this pasta, we’ve
+                      combined it with local short-neck clam from Phan Thiet and
+                      other nutritious ingredients such as cherry tomatoes, baby
+                      corn and Dalat kale. Besides, we also have three other
+                      special seasonal dishes, which we will share more about
+                      soon! You can now try our new seasonal menu at Pizza 4P’s
+                      Hai Ba Trung (HCMC). </span
+                    ><br />
+                    <span class="btn_see_more">...More</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -119,8 +172,56 @@ export default {
         color: white;
         display: flex;
         justify-content: space-between;
-        > .primary {
+        > ._primary {
           width: 72%;
+          > .item_news {
+            margin-bottom: 8em;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            > .top_block {
+              width: 100%;
+              margin-bottom: 16px;
+              > .title_new {
+                font-size: 24px;
+              }
+              > .extra_info {
+                color: #999;
+                margin-top: 8px;
+              }
+            }
+            > .bot_block {
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              > .left {
+                width: 39%;
+              }
+              > .right {
+                width: 57%;
+                display: flex;
+                flex-direction: column;
+                > .content_item_news {
+                  width: 100%;
+                  overflow: hidden;
+                  -webkit-line-clamp: 6;
+                  text-overflow: ellipsis;
+                  -webkit-box-orient: vertical;
+                  display: -webkit-box;
+                }
+                > .btn_see_more {
+                  cursor: pointer;
+                  color: white;
+                  text-decoration: underline;
+                  font-size: 18px;
+                }
+                > .btn_see_more:hover {
+                  color: #9eaf3b;
+                  text-decoration: none;
+                }
+              }
+            }
+          }
         }
         > .secondary {
           width: 15%;
